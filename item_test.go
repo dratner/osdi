@@ -3,6 +3,7 @@ package osdi
 import (
 	"encoding/json"
 	"testing"
+    "log"
 )
 
 func TestItem(t *testing.T) {
@@ -28,6 +29,8 @@ func TestItem(t *testing.T) {
         }
     }
 }`)
+
+	log.Println("Test Item")
 
 	var err error
 	i := new(Item)
@@ -114,6 +117,8 @@ func TestItems(t *testing.T) {
         ]
     }
 }`)
+
+	log.Println("Test Items")
 
 	var err error
 	i := new(Collection)
