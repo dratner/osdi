@@ -4,12 +4,6 @@ import (
 	"time"
 )
 
-type CommonFields struct {
-	Identifiers  []string   `json:"identifiers"`
-	CreatedDate  *time.Time `json:"created_date"`
-	ModifiedDate *time.Time `json:"modified_date"`
-}
-
 type Birthdate struct {
 	Month int `json:"month"`
 	Day   int `json:"day"`
@@ -96,5 +90,5 @@ type Person struct {
 	EmailAddresses      []EmailAddress    `json:"email_addresses"`
 	PhoneNumbers        []PhoneNumber     `json:"phone_numbers"`
 	CustomFields        map[string]string `json:"custom_fields"`
-	Links               LinkMap           `json:"_links"`
+	Links               Links             `json:"_links"`
 }

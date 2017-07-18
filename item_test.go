@@ -2,8 +2,8 @@ package osdi
 
 import (
 	"encoding/json"
+	"log"
 	"testing"
-    "log"
 )
 
 func TestItem(t *testing.T) {
